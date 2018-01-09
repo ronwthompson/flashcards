@@ -1,0 +1,172 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+	text-align: center;
+}
+
+.textarea-container {
+	display: inline-block;
+	position: relative;
+}
+
+.textarea-container div {
+	resize: none;
+	box-sizing: border-box;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	border: 1px solid black;
+}
+
+.textarea-container button {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+.module, .option {
+	border: 1px solid black;
+	display: table-cell;
+	vertical-align: middle;
+	white-space: nowrap;
+	top: -2px;
+	border-radius: 4px;
+	position: relative;
+	border: none;
+	background: none;
+	cursor: pointer;
+	transition: 0.1s all ease;
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.25);
+	background: #a1a1a1;
+    border-bottom: 1px solid #5e5e5e;
+    color: #f5f5f5;
+    background-color: #ababab;
+	border-bottom: 4px solid #727272;	
+}
+
+.active {
+	top:0px;
+	height:50px;
+	border: 1px solid #727272;
+	background-color: #7c7c7c;
+	box-shadow: inset 0px 0px 4px rgba(0,0,0,0.15);
+}
+
+.spacer {
+	float: left;
+}
+
+#prompt, #answer {
+	font-size: 3em;
+}
+
+#next {
+	margin: 10px;
+}
+
+#status {
+	text-align: center;
+}
+
+#modules, #options {
+	display: inline-block;
+	border-spacing: 5px 0;
+}
+
+/* desktop styling */
+@media (min-width: 1440px) {
+	.textarea-container div {
+		width: 300px;
+		height: 300px;
+	}
+
+	.textarea-container button {
+		width: 300px;
+		height: 300px;
+	}
+	#status {
+		height: 100px;
+	}
+
+	.module, .option {
+		width: 200px;
+		height: 50px;
+	}
+}
+
+/* laptop styling */
+@media (min-width: 1025px) and (max-width: 1439px) {
+	.textarea-container div {
+		width: 300px;
+		height: 300px;
+	}
+
+	.textarea-container button {
+		width: 300px;
+		height: 300px;
+	}
+	#status {
+		height: 100px;
+	}
+
+	.module, .option {
+		width: 200px;
+		height: 50px;
+	}
+}
+
+/* tablet styling */
+@media (min-width: 737px) and (max-width: 1024px) {
+	.textarea-container div {
+		width: 300px;
+		height: 300px;
+	}
+
+	.textarea-container button {
+		width: 300px;
+		height: 300px;
+	}
+	#status {
+		height: 100px;
+	}
+
+	.module, .option {
+		width: 200px;
+		height: 50px;
+	}
+}
+
+/* mobile styling */
+@media (max-width: 736px) {
+	h1 {
+		font-size: 1.5em;
+	}
+
+	.textarea-container div {
+		width: 300px;
+		height: 150px;
+	}
+
+	.textarea-container button {
+		width: 300px;
+		height: 150px;
+	}
+	#status {
+		height: 30px;
+	}
+
+	.module, .option {
+		width: 150px;
+		height: 30px;
+		font-size: 0.8em;
+	}
+}
